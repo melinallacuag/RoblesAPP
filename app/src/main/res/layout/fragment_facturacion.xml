@@ -73,32 +73,37 @@
             android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
-
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
             <EditText
                 android:id="@+id/inputruc"
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="50sp"
                 android:background="@drawable/input_border"
                 android:hint="Ingresar RUC"
                 android:inputType="number"
                 android:paddingLeft="20sp"
+                android:layout_gravity="left"
                 android:textColor="#123456"
                 android:textColorHint="#404143"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/btnrenic"
-                android:layout_width="wrap_content"
+                android:layout_width="180sp"
                 android:layout_height="50sp"
                 android:layout_marginStart="10sp"
                 android:text="SUNAT"
-                android:textSize="15sp" />
-        </GridLayout>
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                app:cornerRadius="10sp"/>
 
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

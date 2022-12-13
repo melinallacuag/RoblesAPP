@@ -27,7 +27,10 @@ class NotaDespachoFragment : DialogFragment() {
             val showbuscarcliente = BuscarClienteFragment()
             showbuscarcliente.show((activity as AppCompatActivity).supportFragmentManager,"Buscar Cliente")
         }
-
+        btntipopago.setOnClickListener{
+            val showtipopago = TipoPagoFragment()
+            showtipopago.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
+        }
 
     }
 
