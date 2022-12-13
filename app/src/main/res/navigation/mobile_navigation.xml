@@ -23,8 +23,8 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/facturaFragment"
+        android:id="@+id/nav_factura"
         android:name="com.example.roblesapp.FacturaFragment"
-        android:label="fragment_factura"
+        android:label="Factura"
         tools:layout="@layout/fragment_factura" />
 </navigation>
