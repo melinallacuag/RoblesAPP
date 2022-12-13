@@ -8,10 +8,13 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Facturación</string>
-    <string name="menu_slideshow">Slideshow</string>
     <string name="menu_menuprincipal">Menu Principal</string>
     <string name="menu_factura">Factura</string>
+    <string name="menu_cierrex">Cierre X</string>
+    <string name="menu_cierrez">Cierre Z</string>
+    <string name="menu_cambioturno">Cambio Turno</string>
+    <string name="menu_cambioturnodia">Cambio Día</string>
+    <string name="menu_consultarcomprobante">Consultar Deposito</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
