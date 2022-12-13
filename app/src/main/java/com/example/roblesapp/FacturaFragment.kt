@@ -32,6 +32,11 @@ class FacturaFragment : Fragment() {
             showgalones.show((activity as AppCompatActivity).supportFragmentManager,"Galones")
 
         }
+        btnboleta.setOnClickListener{
+            val showboleta = BoletaFragment()
+            showboleta.show((activity as AppCompatActivity).supportFragmentManager,"Boleta")
+
+        }
 
     }
 
