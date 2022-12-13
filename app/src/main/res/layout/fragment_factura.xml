@@ -57,6 +57,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10sp"
                 app:cardElevation="5sp">
@@ -95,6 +96,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10sp"
                 app:cardElevation="5sp">
@@ -133,6 +135,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10sp"
                 app:cardElevation="5sp">
@@ -171,6 +174,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10sp"
                 app:cardElevation="5sp">
@@ -209,6 +213,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10sp"
                 app:cardElevation="5sp">
@@ -291,6 +296,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -328,6 +334,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -365,6 +372,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -402,6 +410,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -439,6 +448,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -476,6 +486,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5sp"
                 android:clickable="true"
+                android:foreground="@drawable/selectcard"
                 app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
@@ -537,6 +548,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <Button
+            android:id="@+id/btnlibre"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -546,9 +558,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btnsoles"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -558,9 +571,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btngalones"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -570,7 +584,7 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
     </GridLayout>
 
     <TextView
@@ -589,6 +603,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
     <GridLayout
+        android:id="@+id/gridLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
@@ -603,6 +618,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <Button
+            android:id="@+id/btnboleta"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -612,9 +628,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btnfactura"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -624,9 +641,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btnnotadespacho"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -636,9 +654,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btnserafin"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -648,9 +667,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btnpuntos"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -660,9 +680,10 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
 
         <Button
+            android:id="@+id/btncanje"
             android:layout_width="wrap_content"
             android:layout_height="60sp"
             android:layout_rowWeight="1"
@@ -672,8 +693,23 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:cornerRadius="5sp" />
+            app:cornerRadius="10sp" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="5sp"
+        android:text="TRANSACCIONES"
+        android:textColor="#3C4048"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
