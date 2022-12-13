@@ -3,28 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_menuprincipal">
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.roblesapp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.roblesapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.roblesapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_factura"
         android:name="com.example.roblesapp.FacturaFragment"
-        android:label="Factura"
+        android:label="@string/menu_factura"
         tools:layout="@layout/fragment_factura" />
+    <fragment
+        android:id="@+id/nav_menuprincipal"
+        android:name="com.example.roblesapp.MenuFragment"
+        android:label="@string/menu_menuprincipal"
+        tools:layout="@layout/fragment_menu" />
 </navigation>

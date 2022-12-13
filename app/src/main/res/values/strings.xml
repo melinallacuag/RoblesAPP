@@ -10,6 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Facturación</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_menuprincipal">Menu Principal</string>
     <string name="menu_factura">Factura</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
