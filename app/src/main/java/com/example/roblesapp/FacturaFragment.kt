@@ -25,7 +25,11 @@ class FacturaFragment : Fragment() {
 
         btnsoles.setOnClickListener{
             val showsoles = SolesFragment()
-            showsoles.show((activity as AppCompatActivity).supportFragmentManager,"shop")
+            showsoles.show((activity as AppCompatActivity).supportFragmentManager,"Soles")
+        }
+        btngalones.setOnClickListener{
+            val showgalones = GalonesFragment()
+            showgalones.show((activity as AppCompatActivity).supportFragmentManager,"Galones")
 
         }
 
