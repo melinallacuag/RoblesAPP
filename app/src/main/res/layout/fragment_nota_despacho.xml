@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoletaFragment">
+    tools:context=".NotaDespachoFragment">
 
     <LinearLayout
         android:layout_width="380sp"
@@ -21,10 +21,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BOLETA"
+            android:text="NOTA DESPACHO"
             android:textColor="#071C65"
             android:textSize="25sp"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,13 +36,36 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/inputnplaca"
+            android:id="@+id/inputplaca"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginTop="10sp"
+            android:background="@drawable/input_border"
             android:drawablePadding="12sp"
             android:hint="Ingresar N° Placa"
+            android:inputType="number"
+            android:paddingLeft="20sp"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="Kilometraje:"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputkilometraje"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
             android:background="@drawable/input_border"
+            android:drawablePadding="12sp"
+            android:hint="Ingresar Kilometraje"
             android:inputType="number"
             android:paddingLeft="20sp"
             android:textColor="#123456"
@@ -51,20 +75,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
-            android:text="DNI:"
+            android:text="ID Cliente:"
             android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/inputdni"
+                android:id="@+id/inputidcliente"
                 android:layout_width="220dp"
                 android:layout_height="50sp"
-                android:hint="Ingresar DNI"
                 android:background="@drawable/input_border"
+                android:hint="Ingresar ID Cliente"
+                android:inputType="number"
+                android:paddingLeft="20sp"
+                android:textColor="#123456"
+                android:textColorHint="#404143"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnbuscarcliente"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginStart="10sp"
+                android:text="cliente"
+                android:textSize="15sp" />
+        </GridLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="RUC:"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputruc"
+                android:layout_width="220dp"
+                android:layout_height="50sp"
+                android:background="@drawable/input_border"
+                android:hint="Ingresar RUC"
                 android:inputType="number"
                 android:paddingLeft="20sp"
                 android:textColor="#123456"
@@ -76,31 +134,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:layout_marginStart="10sp"
-                android:text="renic"
+                android:text="SUNAT"
                 android:textSize="15sp" />
         </GridLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15sp"
-            android:text="Nombre:"
+            android:layout_marginTop="10sp"
+            android:text="Razon Social"
             android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/inputnombre"
+            android:id="@+id/inputrazonsocial"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginTop="10sp"
-            android:drawablePadding="12sp"
-            android:hint="Ingresar Nombre"
             android:background="@drawable/input_border"
-            android:inputType="number"
+            android:drawablePadding="12sp"
+            android:hint="Ingresar Razon Social"
+            android:inputType="text"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"
             android:textSize="14sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,9 +175,32 @@
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginTop="10sp"
+            android:background="@drawable/input_border"
             android:drawablePadding="12sp"
             android:hint="Ingresar Dirección"
+            android:inputType="text"
+            android:paddingLeft="20sp"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Observación"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputobservacion"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
             android:background="@drawable/input_border"
+            android:drawablePadding="12sp"
+            android:hint="Ingresar Observación"
             android:inputType="text"
             android:paddingLeft="20sp"
             android:textColor="#123456"
