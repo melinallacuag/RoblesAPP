@@ -20,4 +20,9 @@
         android:name="com.example.roblesapp.MenuFragment"
         android:label="@string/menu_menuprincipal"
         tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_dettalleoperacion"
+        android:name="com.example.roblesapp.DetalleOperacionesFragment"
+        android:label="Detalle de la Factura"
+        tools:layout="@layout/fragment_detalle_operaciones" />
 </navigation>

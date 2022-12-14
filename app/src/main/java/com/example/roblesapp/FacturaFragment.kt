@@ -56,6 +56,10 @@ class FacturaFragment : Fragment() {
             shownotadespacho.setCancelable(false)
         }
 
+        btndetalles.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_dettalleoperacion)
+        }
+
     }
 
 }
