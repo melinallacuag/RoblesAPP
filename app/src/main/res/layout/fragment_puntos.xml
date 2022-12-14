@@ -58,7 +58,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnboletatarjeta"
+                android:id="@+id/btnpuntoboletatarjeta"
                 android:layout_width="wrap_content"
                 android:layout_height="60sp"
                 android:layout_gravity="center"
@@ -73,7 +73,7 @@
                 app:cornerRadius="10sp" />
 
             <Button
-                android:id="@+id/btnfacturatarjeta"
+                android:id="@+id/btnpuntofacturatarjeta"
                 android:layout_width="wrap_content"
                 android:layout_height="60sp"
                 android:layout_gravity="center"

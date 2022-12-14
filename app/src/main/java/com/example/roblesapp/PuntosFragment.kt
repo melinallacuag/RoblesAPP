@@ -42,16 +42,16 @@ class PuntosFragment : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnboletatarjeta.setOnClickListener{
-            val boletatarjeta = BoletaFragment()
-            boletatarjeta.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
-            boletatarjeta.setCancelable(false)
+        btnpuntoboletatarjeta.setOnClickListener{
+            val puntosboletatarjeta = PuntosBoletaFragment()
+            puntosboletatarjeta.show((activity as AppCompatActivity).supportFragmentManager,"Puntos Boleta")
+            puntosboletatarjeta.setCancelable(false)
         }
 
-        btnfacturatarjeta.setOnClickListener{
-            val showfacturatarjeta = FacturacionFragment()
-            showfacturatarjeta.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
-            showfacturatarjeta.setCancelable(false)
+        btnpuntofacturatarjeta.setOnClickListener{
+            val puntosfacturatarjeta = PuntosFacturaFragment()
+            puntosfacturatarjeta.show((activity as AppCompatActivity).supportFragmentManager,"Puntos Factura")
+            puntosfacturatarjeta.setCancelable(false)
         }
 
     }
