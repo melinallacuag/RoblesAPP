@@ -27,6 +27,7 @@ class BoletaFragment : DialogFragment() {
         btntipopago.setOnClickListener{
             val showtipopago = TipoPagoFragment()
             showtipopago.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
+            showtipopago.setCancelable(false)
         }
 
     }

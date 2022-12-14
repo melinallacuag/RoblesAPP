@@ -18,6 +18,8 @@ class FacturaFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_factura, container, false)
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -26,6 +28,7 @@ class FacturaFragment : Fragment() {
         btnsoles.setOnClickListener{
             val showsoles = SolesFragment()
             showsoles.show((activity as AppCompatActivity).supportFragmentManager,"Soles")
+            showsoles.setCancelable(false)
         }
         btngalones.setOnClickListener{
             val showgalones = GalonesFragment()
