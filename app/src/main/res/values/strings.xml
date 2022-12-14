@@ -9,7 +9,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_menuprincipal">Menu Principal</string>
-    <string name="menu_factura">Factura</string>
+    <string name="menu_factura">Facturación</string>
     <string name="menu_cierrex">Cierre X</string>
     <string name="menu_cierrez">Cierre Z</string>
     <string name="menu_cambioturno">Cambio Turno</string>

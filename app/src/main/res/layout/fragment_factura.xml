@@ -795,7 +795,7 @@
            android:rowCount="1"
            android:padding="5sp">
            <GridLayout
-               android:id="@+id/transaccion01"
+               android:id="@+id/btndetalles"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:background="@drawable/input_border"
@@ -862,7 +862,7 @@
                    android:textStyle="bold" />
 
                <ImageButton
-                   android:id="@+id/btndetalles"
+
                    android:layout_width="5sp"
                    android:layout_height="20sp"
                    android:layout_gravity="center"
