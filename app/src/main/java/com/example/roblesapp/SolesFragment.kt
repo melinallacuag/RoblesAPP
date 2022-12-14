@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_soles.*
 import kotlinx.android.synthetic.main.fragment_soles.view.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.*
-import kotlinx.android.synthetic.main.fragment_tipo_pago.view.btncerrarsoles
+import kotlinx.android.synthetic.main.fragment_tipo_pago.view.btncerrar
 
 
 class SolesFragment : DialogFragment() {

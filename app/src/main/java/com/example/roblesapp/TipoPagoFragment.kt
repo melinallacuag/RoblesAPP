@@ -22,12 +22,16 @@ lateinit var campoP:EditText
     ): View? {
         var rootView: View = inflater.inflate(R.layout.fragment_tipo_pago,container,false)
 
-          rootView.btncancelar.setOnClickListener{
+
+        rootView.btncerrar.setOnClickListener{
+            dismiss()
+        }
+
+        rootView.btncancelartipopago.setOnClickListener{
               dismiss()
           }
 
-
-        rootView.btnagregar.setOnClickListener{
+        rootView.btnagregartipopago.setOnClickListener{
 
             val selectdId = ratiodd.checkedRadioButtonId
             val radio = rootView.findViewById<RadioButton>(selectdId)
