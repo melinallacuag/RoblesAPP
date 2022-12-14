@@ -5,28 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
-import kotlinx.android.synthetic.main.fragment_canje.*
 import kotlinx.android.synthetic.main.fragment_canje.view.*
 import kotlinx.android.synthetic.main.fragment_canje.view.btncancelarcanje
+import kotlinx.android.synthetic.main.fragment_galones.*
+import kotlinx.android.synthetic.main.fragment_galones.view.*
 import kotlinx.android.synthetic.main.fragment_lista_canje_producto.view.*
-import kotlinx.android.synthetic.main.fragment_nota_despacho.*
-import kotlinx.android.synthetic.main.fragment_puntos.view.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.btncerrar
 
 
-class CanjeFragment : DialogFragment() {
-
+class ListaCanjeProductoFragment : DialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var rootView: View = inflater.inflate(R.layout.fragment_canje,container,false)
+        var rootView: View = inflater.inflate(R.layout.fragment_lista_canje_producto,container,false)
 
 
         rootView.btncerrar.setOnClickListener{
@@ -36,26 +34,14 @@ class CanjeFragment : DialogFragment() {
         rootView.btncancelarcanje.setOnClickListener{
             dismiss()
         }
+        rootView.btnagregarclientecanje.setOnClickListener{
 
-        rootView.btnimprimircanje.setOnClickListener{
 
-
-            Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"Canje:", Toast.LENGTH_LONG).show()
             dismiss()
         }
 
         return rootView
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        btncanjeconsulta.setOnClickListener{
-            val showcanjeconsulta = ListaCanjeProductoFragment()
-            showcanjeconsulta.show((activity as AppCompatActivity).supportFragmentManager,"Canje Consulta")
-            showcanjeconsulta.setCancelable(false)
-        }
-
     }
 
 
