@@ -37,23 +37,23 @@ class FacturaFragment : Fragment() {
         btngalones.setOnClickListener{
             val showgalones = GalonesFragment()
             showgalones.show((activity as AppCompatActivity).supportFragmentManager,"Galones")
-
+            showgalones.setCancelable(false)
         }
         btnboleta.setOnClickListener{
             val showboleta = BoletaFragment()
             showboleta.show((activity as AppCompatActivity).supportFragmentManager,"Boleta")
-
+            showboleta.setCancelable(false)
         }
         btnfactura.setOnClickListener{
             val showfactura = FacturacionFragment()
             showfactura.show((activity as AppCompatActivity).supportFragmentManager,"Factura")
-
+            showfactura.setCancelable(false)
         }
 
         btnnotadespacho.setOnClickListener{
             val shownotadespacho = NotaDespachoFragment()
             shownotadespacho.show((activity as AppCompatActivity).supportFragmentManager,"Nota Despacho")
-
+            shownotadespacho.setCancelable(false)
         }
 
     }
