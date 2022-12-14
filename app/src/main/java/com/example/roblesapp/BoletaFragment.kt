@@ -9,8 +9,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
+import kotlinx.android.synthetic.main.fragment_boleta.*
 import kotlinx.android.synthetic.main.fragment_boleta.view.*
 import kotlinx.android.synthetic.main.fragment_nota_despacho.*
+import kotlinx.android.synthetic.main.fragment_nota_despacho.btntipopago
 import kotlinx.android.synthetic.main.fragment_soles.*
 import kotlinx.android.synthetic.main.fragment_soles.view.*
 import kotlinx.android.synthetic.main.fragment_soles.view.btncerrar
@@ -40,6 +42,11 @@ class BoletaFragment : DialogFragment() {
             Toast.makeText(context,"Agregar Boleta", Toast.LENGTH_LONG).show()
             dismiss()
         }
+        rootView.btngenerarcliente.setOnClickListener{
+
+            Toast.makeText(context,"Cliente Generado", Toast.LENGTH_LONG).show()
+            dismiss()
+        }
         return rootView
     }
 
@@ -50,6 +57,12 @@ class BoletaFragment : DialogFragment() {
             val showtipopago = TipoPagoFragment()
             showtipopago.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
             showtipopago.setCancelable(false)
+        }
+
+        btngenerarcliente.setOnClickListener{
+            val showgenerarcliente = DetalleClienteGeneradoFragment()
+            showgenerarcliente.show((activity as AppCompatActivity).supportFragmentManager,"Tipo Pago")
+            showgenerarcliente.setCancelable(false)
         }
 
     }

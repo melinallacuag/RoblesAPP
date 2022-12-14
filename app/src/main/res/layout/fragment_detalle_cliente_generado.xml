@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleClienteGeneradoFragment">
+
+    <LinearLayout
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="CLIENTE GENERADO"
+                android:textColor="#071C65"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btncerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_cerrarx" />
+        </LinearLayout>
+
+
+
+        <GridLayout
+            android:id="@+id/cardcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:padding="15sp"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:clickable="true"
+            android:foreground="@drawable/selectcard"
+            android:backgroundTint="#fff"
+            android:elevation="5sp"
+            android:background="@drawable/input_border"
+            >
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="0000001"
+                android:gravity="center"
+                android:layout_marginEnd="5sp"
+                android:textColor="#071C65"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="Cliente Eventual"
+                android:gravity="center"
+                android:layout_marginEnd="5sp"
+                android:textColor="#071C65"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="los angeles N°300"
+                android:gravity="center"
+                android:layout_marginEnd="5sp"
+                android:textColor="#071C65"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncancelarclientegenerado"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="20sp"
+                android:layout_weight="1"
+                android:backgroundTint="#D51A30"
+                android:text="Cancelar"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:cornerRadius="10sp" />
+
+            <Button
+                android:id="@+id/btnagregarclientegenerado"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_weight="1"
+                android:text="Agregar"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:cornerRadius="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
