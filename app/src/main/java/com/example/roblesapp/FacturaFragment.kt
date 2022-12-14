@@ -67,6 +67,11 @@ class FacturaFragment : Fragment() {
             showcanje.show((activity as AppCompatActivity).supportFragmentManager,"Canje")
             showcanje.setCancelable(false)
         }
+        btnserafin.setOnClickListener{
+            val showserafin= SerafinFragment()
+            showserafin.show((activity as AppCompatActivity).supportFragmentManager,"Canje")
+            showserafin.setCancelable(false)
+        }
 
         btndetalles.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.nav_dettalleoperacion)
