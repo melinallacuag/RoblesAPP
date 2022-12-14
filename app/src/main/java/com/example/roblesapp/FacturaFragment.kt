@@ -56,6 +56,12 @@ class FacturaFragment : Fragment() {
             shownotadespacho.setCancelable(false)
         }
 
+        btnpuntos.setOnClickListener{
+            val showpuntos= PuntosFragment()
+            showpuntos.show((activity as AppCompatActivity).supportFragmentManager,"Nota Despacho")
+            showpuntos.setCancelable(false)
+        }
+
         btndetalles.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.nav_dettalleoperacion)
         }
