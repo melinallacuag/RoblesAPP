@@ -15,7 +15,7 @@
         android:layout_marginTop="10sp"
         android:text="CARA"
         android:textColor="#3C4048"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="140sp"
         android:layout_marginStart="15sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="2sp"
         android:layout_marginEnd="20sp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -254,7 +254,7 @@
         android:layout_marginTop="5sp"
         android:text="MANGUERA"
         android:textColor="#3C4048"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -266,7 +266,7 @@
         android:layout_width="match_parent"
         android:layout_height="140sp"
         android:layout_marginStart="15sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="2sp"
         android:layout_marginEnd="20sp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -526,7 +526,7 @@
         android:layout_marginTop="5sp"
         android:text="MODALIDAD"
         android:textColor="#3C4048"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -538,7 +538,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="2sp"
         android:layout_marginEnd="20sp"
         android:layout_weight="3"
         android:columnCount="3"
@@ -550,40 +550,40 @@
         <Button
             android:id="@+id/btnlibre"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="LIBRE"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btnsoles"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="SOLES"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btngalones"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="GALONES"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
     </GridLayout>
 
@@ -595,7 +595,7 @@
         android:layout_marginTop="5sp"
         android:text="OPERACIÓN"
         android:textColor="#3C4048"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.005"
@@ -607,7 +607,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="2sp"
         android:layout_marginEnd="20sp"
         android:layout_weight="3"
         android:columnCount="3"
@@ -620,79 +620,79 @@
         <Button
             android:id="@+id/btnboleta"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="BOLETA"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btnfactura"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="FACTURA"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btnnotadespacho"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="NOTA DESPACHO"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btnserafin"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="SERAFIN"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btnpuntos"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="PUNTOS"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
 
         <Button
             android:id="@+id/btncanje"
             android:layout_width="wrap_content"
-            android:layout_height="60sp"
+            android:layout_height="50sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_margin="5sp"
+            android:layout_margin="2sp"
             android:text="CANJE"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:cornerRadius="10sp" />
     </GridLayout>
 
@@ -704,7 +704,7 @@
         android:layout_marginTop="5sp"
         android:text="TRANSACCIONES"
         android:textColor="#3C4048"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -729,9 +729,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
         <TextView
-            android:layout_width="40sp"
+            android:layout_width="35sp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5sp"
+            android:layout_marginEnd="2sp"
             android:gravity="center"
             android:text="Cara"
             android:textColor="#fff"
@@ -739,9 +739,9 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="70sp"
+            android:layout_width="60sp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5sp"
+            android:layout_marginEnd="2sp"
             android:gravity="center"
             android:text="Placa"
             android:textColor="#fff"
@@ -749,9 +749,9 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="70sp"
+            android:layout_width="60sp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5sp"
+            android:layout_marginEnd="2sp"
             android:gravity="center"
             android:text="ID Cliente"
             android:textColor="#fff"
@@ -759,9 +759,9 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="140sp"
+            android:layout_width="120sp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5sp"
+            android:layout_marginEnd="2sp"
             android:gravity="center"
             android:text="Razon Social"
             android:textColor="#fff"
@@ -781,8 +781,8 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14sp"
-        android:layout_marginTop="10sp"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="5sp"
         android:layout_marginEnd="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -812,59 +812,59 @@
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="40sp"
+                   android:layout_width="35sp"
                    android:layout_height="match_parent"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="01"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="70sp"
+                   android:layout_width="60sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="75847125"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="70sp"
+                   android:layout_width="60sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="1146960"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="140sp"
+                   android:layout_width="120sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="Nombre de la razon social los angeles N°300"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
                    android:layout_width="50sp"
                    android:layout_height="match_parent"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="10.00"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <ImageButton
                    android:id="@+id/btndetalles"
-                   android:layout_width="10sp"
-                   android:layout_height="30sp"
+                   android:layout_width="5sp"
+                   android:layout_height="20sp"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
                    android:background="@android:color/transparent"
@@ -889,57 +889,57 @@
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="40sp"
+                   android:layout_width="35sp"
                    android:layout_height="match_parent"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="01"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="70sp"
+                   android:layout_width="60sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="75847125"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="70sp"
+                   android:layout_width="60sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="1146960"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="140sp"
+                   android:layout_width="120sp"
                    android:layout_height="wrap_content"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="Nombre de la razon social los angeles N°300"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
 
                <TextView
                    android:layout_width="50sp"
                    android:layout_height="match_parent"
-                   android:layout_marginEnd="5sp"
+                   android:layout_marginEnd="2sp"
                    android:gravity="center"
                    android:text="10.00"
                    android:textColor="#071C65"
-                   android:textSize="14sp"
+                   android:textSize="12sp"
                    android:textStyle="bold" />
                <ImageButton
-                   android:layout_width="10sp"
-                   android:layout_height="30sp"
+                   android:layout_width="5sp"
+                   android:layout_height="20sp"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
                    android:background="@android:color/transparent"
