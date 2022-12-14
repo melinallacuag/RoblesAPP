@@ -62,6 +62,12 @@ class FacturaFragment : Fragment() {
             showpuntos.setCancelable(false)
         }
 
+        btncanje.setOnClickListener{
+            val showcanje= CanjeFragment()
+            showcanje.show((activity as AppCompatActivity).supportFragmentManager,"Canje")
+            showcanje.setCancelable(false)
+        }
+
         btndetalles.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.nav_dettalleoperacion)
         }
