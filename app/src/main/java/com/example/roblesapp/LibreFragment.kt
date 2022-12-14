@@ -29,7 +29,14 @@ class LibreFragment : DialogFragment() {
             dismiss()
         }
 
-        rootView.btncancelarlibre.setOnClickListener {
+        rootView.btnlibreno.setOnClickListener {
+            dismiss()
+        }
+
+        rootView.btnlibresi.setOnClickListener{
+
+
+            Toast.makeText(context,"Activo modo libre", Toast.LENGTH_LONG).show()
             dismiss()
         }
         return rootView

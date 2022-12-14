@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.fragment_boleta.view.*
+import kotlinx.android.synthetic.main.fragment_facturacion.*
 import kotlinx.android.synthetic.main.fragment_facturacion.view.*
 import kotlinx.android.synthetic.main.fragment_nota_despacho.*
 import kotlinx.android.synthetic.main.fragment_soles.view.*

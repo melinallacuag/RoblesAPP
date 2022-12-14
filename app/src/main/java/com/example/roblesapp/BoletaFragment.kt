@@ -12,7 +12,6 @@ import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.fragment_boleta.*
 import kotlinx.android.synthetic.main.fragment_boleta.view.*
 import kotlinx.android.synthetic.main.fragment_nota_despacho.*
-import kotlinx.android.synthetic.main.fragment_nota_despacho.btntipopago
 import kotlinx.android.synthetic.main.fragment_soles.*
 import kotlinx.android.synthetic.main.fragment_soles.view.*
 import kotlinx.android.synthetic.main.fragment_soles.view.btncerrar
