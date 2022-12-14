@@ -30,5 +30,11 @@ class DetalleOperacionesFragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.nav_editardetalleoperacion)
         }
 
+        btneliminar.setOnClickListener{
+            val showeliminarfactura= EliminarOperacionesFragment()
+            showeliminarfactura.show((activity as AppCompatActivity).supportFragmentManager,"Eliminar Facturación")
+            showeliminarfactura.setCancelable(false)
+        }
+
     }
 }

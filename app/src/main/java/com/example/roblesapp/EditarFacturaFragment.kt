@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_factura.*
 
 
 class EditarFacturaFragment : Fragment() {
@@ -18,5 +21,44 @@ class EditarFacturaFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_editar_factura, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        btnboleta.setOnClickListener{
+            val showboleta = BoletaFragment()
+            showboleta.show((activity as AppCompatActivity).supportFragmentManager,"Boleta")
+            showboleta.setCancelable(false)
+        }
+        btnfactura.setOnClickListener{
+            val showfactura = FacturacionFragment()
+            showfactura.show((activity as AppCompatActivity).supportFragmentManager,"Factura")
+            showfactura.setCancelable(false)
+        }
+
+        btnnotadespacho.setOnClickListener{
+            val shownotadespacho = NotaDespachoFragment()
+            shownotadespacho.show((activity as AppCompatActivity).supportFragmentManager,"Nota Despacho")
+            shownotadespacho.setCancelable(false)
+        }
+
+        btnpuntos.setOnClickListener{
+            val showpuntos= PuntosFragment()
+            showpuntos.show((activity as AppCompatActivity).supportFragmentManager,"Nota Despacho")
+            showpuntos.setCancelable(false)
+        }
+
+        btncanje.setOnClickListener{
+            val showcanje= CanjeFragment()
+            showcanje.show((activity as AppCompatActivity).supportFragmentManager,"Canje")
+            showcanje.setCancelable(false)
+        }
+        btnserafin.setOnClickListener{
+            val showserafin= SerafinFragment()
+            showserafin.show((activity as AppCompatActivity).supportFragmentManager,"Canje")
+            showserafin.setCancelable(false)
+        }
+
+
+
+    }
 }
