@@ -33,7 +33,7 @@
                 android:layout_weight="1"/>
 
             <ImageButton
-                android:id="@+id/btncerrarsoles"
+                android:id="@+id/btncerrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -65,18 +65,38 @@
             android:textColorHint="#404143"
             android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/dialogDismiss_button"
-            android:layout_width="200sp"
-            android:layout_height="60sp"
-            android:layout_gravity="end"
-            android:layout_marginTop="10sp"
-            android:gravity="center"
-            android:text="Agregar"
-            android:textAllCaps="true"
-            android:textColor="#fff"
-            android:textSize="12sp"
-            app:cornerRadius="10sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btncancelargalones"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginTop="10sp"
+                android:text="Cancelar"
+                android:layout_marginEnd="20sp"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:backgroundTint="#D51A30"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnagregargalones"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginTop="10sp"
+                android:text="Agregar"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
