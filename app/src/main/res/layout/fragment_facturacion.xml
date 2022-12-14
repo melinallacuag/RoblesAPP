@@ -59,7 +59,7 @@
             android:background="@drawable/input_border"
             android:drawablePadding="12sp"
             android:hint="Ingresar N° Placa"
-            android:inputType="number"
+            android:inputType="text"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"

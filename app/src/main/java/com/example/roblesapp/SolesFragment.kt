@@ -1,6 +1,8 @@
 package com.example.roblesapp
 
 import android.os.Bundle
+import android.text.InputFilter
+import android.text.Spanned
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -25,26 +27,24 @@ class SolesFragment : DialogFragment() {
         // Inflate the layout for this fragment
         var rootView: View = inflater.inflate(R.layout.fragment_soles,container,false)
 
+
+
         rootView.btncerrar.setOnClickListener{
             dismiss()
         }
-
         rootView.btncancelarsoles.setOnClickListener{
             dismiss()
         }
-
         rootView.btnagregarsoles.setOnClickListener{
-
             val solesId = inputmotosoles.id
             val soles = rootView.findViewById<EditText>(solesId)
-
             var totalsoles = soles.text.toString()
-
             Toast.makeText(context,"Monto Soles: $totalsoles", Toast.LENGTH_LONG).show()
             dismiss()
         }
         return rootView
 
     }
+
 
 }
