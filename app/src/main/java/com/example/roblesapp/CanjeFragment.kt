@@ -37,26 +37,21 @@ class CanjeFragment : DialogFragment() {
             dismiss()
         }
 
+        rootView.btncanjeconsultar.setOnClickListener{
+            Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
+            dismiss()
+        }
         rootView.btnimprimircanje.setOnClickListener{
 
 
-            Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"PUNTOS", Toast.LENGTH_LONG).show()
             dismiss()
         }
 
         return rootView
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        btncanjeconsulta.setOnClickListener{
-            val showcanjeconsulta = ListaCanjeProductoFragment()
-            showcanjeconsulta.show((activity as AppCompatActivity).supportFragmentManager,"Canje Consulta")
-            showcanjeconsulta.setCancelable(false)
-        }
-
-    }
 
 
 }

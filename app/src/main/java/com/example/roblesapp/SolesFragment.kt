@@ -38,7 +38,9 @@ class SolesFragment : DialogFragment() {
         rootView.btnagregarsoles.setOnClickListener{
             val solesId = inputmotosoles.id
             val soles = rootView.findViewById<EditText>(solesId)
+
             var totalsoles = soles.text.toString()
+
             Toast.makeText(context,"Monto Soles: $totalsoles", Toast.LENGTH_LONG).show()
             dismiss()
         }

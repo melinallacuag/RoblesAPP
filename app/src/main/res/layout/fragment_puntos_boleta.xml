@@ -42,28 +42,7 @@
                 android:background="@android:color/transparent"
                 android:src="@drawable/icon_cerrarx" />
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15sp"
-            android:text="N° Tarjeta:"
-            android:textColor="#071C65"
-            android:textSize="16sp"
-            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/inputntarjeta"
-            android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:layout_marginTop="10sp"
-            android:background="@drawable/input_border"
-            android:drawablePadding="12sp"
-            android:hint="Ingresar N° Tarjeta"
-            android:inputType="number"
-            android:paddingLeft="20sp"
-            android:textColor="#123456"
-            android:textColorHint="#404143"
-            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -87,6 +66,7 @@
             android:textColor="#123456"
             android:textColorHint="#404143"
             android:textSize="14sp" />
+
 
         <TextView
             android:layout_width="match_parent"

@@ -105,7 +105,7 @@
             android:drawablePadding="12sp"
             android:hint="Ingresar Monto Soles"
             android:background="@drawable/input_border"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"

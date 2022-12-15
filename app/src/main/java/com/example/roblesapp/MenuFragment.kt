@@ -27,6 +27,21 @@ class MenuFragment : Fragment() {
         btnVentas.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.nav_venta)
         }
+        btnCierreX.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_cierreX)
+        }
+        btnCierreZ.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_cierreZ)
+        }
+        btnCambioTurno.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_cambioturno)
+        }
+        btnInicioDia.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_turnodia)
+        }
+        btnConsultarComprobante.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.nav_consultarcomprobante)
+        }
 
 
 
