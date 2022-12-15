@@ -212,7 +212,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
-                    android:text="Ventas"
+                    android:text="@string/menu_ventas"
                     android:textAlignment="center"
                     android:textColor="#fff"
                     android:textSize="14sp"

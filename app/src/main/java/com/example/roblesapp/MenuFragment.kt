@@ -25,7 +25,7 @@ class MenuFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnVentas.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.nav_factura)
+            Navigation.findNavController(view).navigate(R.id.nav_venta)
         }
 
 

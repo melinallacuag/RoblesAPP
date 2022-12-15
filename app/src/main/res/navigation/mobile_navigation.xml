@@ -11,9 +11,9 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/nav_factura"
+        android:id="@+id/nav_venta"
         android:name="com.example.roblesapp.FacturaFragment"
-        android:label="@string/menu_factura"
+        android:label="@string/menu_ventas"
         tools:layout="@layout/fragment_factura" />
     <fragment
         android:id="@+id/nav_menuprincipal"
@@ -23,7 +23,7 @@
     <fragment
         android:id="@+id/nav_dettalleoperacion"
         android:name="com.example.roblesapp.DetalleOperacionesFragment"
-        android:label="Detalle de la Facturación"
+        android:label="@string/detalla_venta"
         tools:layout="@layout/fragment_detalle_operaciones" />
     <fragment
         android:id="@+id/nav_editardetalleoperacion"

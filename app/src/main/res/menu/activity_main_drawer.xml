@@ -9,9 +9,9 @@
             android:icon="@drawable/icon_home"
             android:title="@string/menu_menuprincipal" />
         <item
-            android:id="@+id/nav_factura"
+            android:id="@+id/nav_venta"
             android:icon="@drawable/icon_facturacion"
-            android:title="@string/menu_factura" />
+            android:title="@string/menu_ventas" />
         <item
             android:id="@+id/nav_cierreX"
             android:icon="@drawable/icon_cierrex"
@@ -27,10 +27,22 @@
         <item
             android:id="@+id/nav_cambioturnodia"
             android:icon="@drawable/icon_turnodia"
-            android:title="@string/menu_cambioturnodia" />
+            android:title="@string/menu_iniciodia" />
         <item
             android:id="@+id/nav_consultarcomprobante"
             android:icon="@drawable/icon_consultarcomprobante"
             android:title="@string/menu_consultarcomprobante" />
+        <item
+            android:id="@+id/nav_depositogrifo"
+            android:icon="@drawable/icon_consultarcomprobante"
+            android:title="@string/menu_depositogrifo" />
+        <item
+            android:id="@+id/nav_anular"
+            android:icon="@drawable/icon_cancelar"
+            android:title="@string/menu_anular" />
+        <item
+            android:id="@+id/nav_configuracionlado"
+            android:icon="@drawable/icon_configlado"
+            android:title="@string/menu_cofglado" />
     </group>
 </menu>
