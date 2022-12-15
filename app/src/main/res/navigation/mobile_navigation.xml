@@ -19,7 +19,8 @@
         android:id="@+id/nav_menuprincipal"
         android:name="com.example.roblesapp.MenuFragment"
         android:label="@string/menu_menuprincipal"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+    </fragment>
     <fragment
         android:id="@+id/nav_dettalleoperacion"
         android:name="com.example.roblesapp.DetalleOperacionesFragment"
@@ -30,4 +31,44 @@
         android:name="com.example.roblesapp.EditarFacturaFragment"
         android:label="Editar Detalle de la Facturación"
         tools:layout="@layout/fragment_editar_factura" />
+    <fragment
+        android:id="@+id/nav_cierreX"
+        android:name="com.example.roblesapp.CierrexFragment"
+        android:label="@string/menu_cierrex"
+        tools:layout="@layout/fragment_cierrex" />
+    <fragment
+        android:id="@+id/nav_cierreZ"
+        android:name="com.example.roblesapp.CierreZFragment"
+        android:label="@string/menu_cierrez"
+        tools:layout="@layout/fragment_cierre_z" />
+    <fragment
+        android:id="@+id/nav_cambioturno"
+        android:name="com.example.roblesapp.CambioTurnoFragment"
+        android:label="@string/menu_cambioturno"
+        tools:layout="@layout/fragment_cambio_turno" />
+    <fragment
+        android:id="@+id/nav_turnodia"
+        android:name="com.example.roblesapp.InicioDiaFragment"
+        android:label="@string/menu_iniciodia"
+        tools:layout="@layout/fragment_inicio_dia" />
+    <fragment
+        android:id="@+id/nav_anular"
+        android:name="com.example.roblesapp.AnularFragment"
+        android:label="@string/menu_anular"
+        tools:layout="@layout/fragment_anular" />
+    <fragment
+        android:id="@+id/nav_configuracionlado"
+        android:name="com.example.roblesapp.ConfigLadoFragment"
+        android:label="@string/menu_cofglado"
+        tools:layout="@layout/fragment_config_lado" />
+    <fragment
+        android:id="@+id/nav_consultarcomprobante"
+        android:name="com.example.roblesapp.ConsultarComprobanteFragment"
+        android:label="@string/menu_consultarcomprobante"
+        tools:layout="@layout/fragment_consultar_comprobante" />
+    <fragment
+        android:id="@+id/nav_depositogrifo"
+        android:name="com.example.roblesapp.DepositoGrifoFragment"
+        android:label="@string/menu_depositogrifo"
+        tools:layout="@layout/fragment_deposito_grifo" />
 </navigation>

@@ -25,7 +25,7 @@
             android:icon="@drawable/icon_turno"
             android:title="@string/menu_cambioturno" />
         <item
-            android:id="@+id/nav_cambioturnodia"
+            android:id="@+id/nav_turnodia"
             android:icon="@drawable/icon_turnodia"
             android:title="@string/menu_iniciodia" />
         <item
@@ -34,7 +34,7 @@
             android:title="@string/menu_consultarcomprobante" />
         <item
             android:id="@+id/nav_depositogrifo"
-            android:icon="@drawable/icon_consultarcomprobante"
+            android:icon="@drawable/icon_cajafuerte"
             android:title="@string/menu_depositogrifo" />
         <item
             android:id="@+id/nav_anular"
