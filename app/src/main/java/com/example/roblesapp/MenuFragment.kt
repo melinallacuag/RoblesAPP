@@ -24,7 +24,7 @@ class MenuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        cardFacturacion.setOnClickListener{
+        btnVentas.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.nav_factura)
         }
 

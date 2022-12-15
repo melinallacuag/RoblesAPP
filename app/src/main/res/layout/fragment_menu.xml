@@ -8,21 +8,20 @@
     tools:context=".MenuFragment">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/perfiloperador"
         android:layout_width="125sp"
         android:layout_height="125sp"
-        android:layout_marginTop="35sp"
+        android:layout_marginTop="30sp"
         android:layout_marginEnd="20sp"
         android:scaleType="centerCrop"
         android:src="@drawable/foto_empleador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/roudperfil" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/nombreoperador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
@@ -35,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/fecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
@@ -45,23 +44,23 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreoperador" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/fechaapaertura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="7sp"
+        android:layout_marginStart="5sp"
         android:text="01/02/2022"
         android:textColor="#fff"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toEndOf="@+id/fecha"
+        app:layout_constraintTop_toBottomOf="@+id/nombreoperador" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/turno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
@@ -71,33 +70,33 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/fechaapaertura" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/turnooperador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
         android:layout_marginStart="5sp"
-        android:layout_marginTop="5sp"
         android:text="01"
         android:textColor="#fff"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintStart_toEndOf="@+id/turno"
+        app:layout_constraintTop_toBottomOf="@+id/fechaapaertura" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/informaciongrifo"
         android:layout_width="match_parent"
         android:layout_height="180sp"
         android:layout_marginStart="20sp"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="40sp"
         android:layout_marginEnd="20sp"
         android:background="@drawable/fondo_degradado"
         android:elevation="5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/perfiloperador">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -108,6 +107,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/nombregrigo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -116,24 +116,53 @@
                 android:textColor="#fff"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sucursal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Sucursal:"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nombresucursal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:layout_marginStart="5sp"
+                    android:text="Chupaca"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <TextView
+                android:id="@+id/slogangrifo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="has que tu mundo se mueva "
                 android:textColor="#fff"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
         <ImageView
-            android:layout_width="220sp"
+            android:id="@+id/imagengrifo"
+            android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/img_slogan" />
 
     </LinearLayout>
@@ -150,10 +179,10 @@
         android:layout_marginEnd="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/informaciongrifo">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFacturacion"
+            android:id="@+id/btnVentas"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -179,14 +208,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/grifo"
+                    android:id="@+id/ventas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
-                    android:text="Facturación"
+                    android:text="Ventas"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -194,7 +223,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardCierreX"
+            android:id="@+id/btnCierreX"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -220,14 +249,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/tienda"
+                    android:id="@+id/ciere_x"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
                     android:text="Cierre X"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -235,7 +264,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardCierreZ"
+            android:id="@+id/btnCierreZ"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -261,14 +290,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/reporte"
+                    android:id="@+id/cierre_z"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
                     android:text="Cierre Z"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -276,7 +305,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardCambioTurno"
+            android:id="@+id/btnCambioTurno"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -302,14 +331,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/user"
+                    android:id="@+id/cambio_turno"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
                     android:text="Cambio Turno"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -317,7 +346,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardInicioDia"
+            android:id="@+id/btnInicioDia"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -343,14 +372,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/text"
+                    android:id="@+id/inicio_dia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
                     android:text="Inicio Día"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -358,7 +387,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardConsultarDeposito"
+            android:id="@+id/btnConsultarComprobante"
             android:layout_width="wrap_content"
             android:layout_height="140sp"
             android:layout_rowWeight="1"
@@ -384,14 +413,14 @@
                     android:layout_marginBottom="2sp" />
 
                 <TextView
-                    android:id="@+id/close"
+                    android:id="@+id/consultar_comprobante"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.15"
-                    android:text="Consultar Deposito"
+                    android:text="Consultar Comprobante"
                     android:textAlignment="center"
                     android:textColor="#fff"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
