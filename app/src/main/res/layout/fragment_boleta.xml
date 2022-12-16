@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".BoletaFragment">
 
     <LinearLayout
@@ -82,6 +83,7 @@
                 android:layout_height="50sp"
                 android:background="@drawable/input_border"
                 android:hint="Ingresar DNI"
+                android:maxLength="8"
                 android:inputType="number"
                 android:paddingLeft="20sp"
                 android:layout_gravity="left"
@@ -120,8 +122,6 @@
             android:hint="Ingresar Nombre"
             android:background="@drawable/input_border"
             android:inputType="text"
-            android:backgroundTint="#DDDDDD"
-            android:focusable="false"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"
@@ -144,8 +144,6 @@
             android:drawablePadding="12sp"
             android:hint="Ingresar Dirección"
             android:inputType="text"
-            android:focusable="false"
-            android:backgroundTint="#DDDDDD"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"

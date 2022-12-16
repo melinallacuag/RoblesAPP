@@ -45,7 +45,7 @@ class CanjeFragment : DialogFragment() {
 
         }
         rootView.btnimprimircanje.setOnClickListener{
-            Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"Imprimir Canje", Toast.LENGTH_LONG).show()
             dismiss()
         }
         return rootView

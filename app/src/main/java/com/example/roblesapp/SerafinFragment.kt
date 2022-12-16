@@ -35,7 +35,7 @@ class SerafinFragment : DialogFragment() {
 
         rootView.btnagregarserafin.setOnClickListener{
 
-            Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"Imprimir Serafin", Toast.LENGTH_LONG).show()
             dismiss()
         }
         return rootView

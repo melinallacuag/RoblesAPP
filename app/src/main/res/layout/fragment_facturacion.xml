@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".FacturacionFragment">
 
     <LinearLayout
@@ -83,6 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
                 android:background="@drawable/input_border"
+                android:maxLength="11"
                 android:hint="Ingresar RUC"
                 android:inputType="number"
                 android:paddingLeft="20sp"
@@ -122,8 +124,6 @@
             android:drawablePadding="12sp"
             android:hint="Ingresar Razon Social"
             android:inputType="text"
-            android:focusable="false"
-            android:backgroundTint="#DDDDDD"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"
@@ -146,8 +146,6 @@
             android:drawablePadding="12sp"
             android:hint="Ingresar Dirección"
             android:inputType="text"
-            android:focusable="false"
-            android:backgroundTint="#DDDDDD"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"

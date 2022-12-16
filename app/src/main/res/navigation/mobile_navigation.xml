@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/nav_editardetalleoperacion"
         android:name="com.example.roblesapp.EditarFacturaFragment"
-        android:label="Editar Detalle de la Facturación"
+        android:label="@string/edit_venta"
         tools:layout="@layout/fragment_editar_factura" />
     <fragment
         android:id="@+id/nav_cierreX"

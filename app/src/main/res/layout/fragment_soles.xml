@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SolesFragment">
 
     <LinearLayout
@@ -74,10 +75,9 @@
                 android:layout_height="50sp"
                 android:layout_marginTop="10sp"
                 android:drawablePadding="12sp"
-                android:hint="Ingresar Monto Soles"
+                android:hint="0.00"
                 android:background="@drawable/input_border"
                 android:inputType="numberDecimal"
-                android:maxLength="7"
                 android:paddingLeft="20sp"
                 android:textColor="#123456"
                 android:textColorHint="#404143"

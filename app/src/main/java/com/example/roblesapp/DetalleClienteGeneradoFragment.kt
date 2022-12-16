@@ -36,7 +36,7 @@ class DetalleClienteGeneradoFragment : DialogFragment() {
 
         rootView.btnagregarclientegenerado.setOnClickListener{
 
-            Toast.makeText(context,"Agregar Cliente Generado", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"Agregar Boleta Generado", Toast.LENGTH_LONG).show()
             dismiss()
         }
 
