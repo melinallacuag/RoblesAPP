@@ -37,17 +37,17 @@ class CanjeFragment : DialogFragment() {
             dismiss()
         }
 
+
         rootView.btncanjeconsultar.setOnClickListener{
+
+
+            Toast.makeText(context,"1000 PT", Toast.LENGTH_LONG).show()
+
+        }
+        rootView.btnimprimircanje.setOnClickListener{
             Toast.makeText(context,"Imprimir", Toast.LENGTH_LONG).show()
             dismiss()
         }
-        rootView.btnimprimircanje.setOnClickListener{
-
-
-            Toast.makeText(context,"PUNTOS", Toast.LENGTH_LONG).show()
-            dismiss()
-        }
-
         return rootView
     }
 
