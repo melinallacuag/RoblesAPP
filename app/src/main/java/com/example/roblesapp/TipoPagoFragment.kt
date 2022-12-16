@@ -36,23 +36,35 @@ class TipoPagoFragment : DialogFragment() {
           }
 
 
-        rootView.btnagregartipopago.setOnClickListener{
 
-            val selectdId = ratiodd.checkedRadioButtonId
-            val radio = rootView.findViewById<RadioButton>(selectdId)
-
-            var ratingR = radio.text.toString()
-
-            Toast.makeText(context,"Agregar: $ratingR",Toast.LENGTH_LONG).show()
-            dismiss()
-        }
 
 
         return rootView
 
 
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        radioEfectivo.setOnClickListener{
+            val showradioEfectivo = TipoEfectivoFragment()
+            showradioEfectivo.show((activity as AppCompatActivity).supportFragmentManager,"Tipo de Efectivo")
+            showradioEfectivo.setCancelable(false)
+        }
+
+        radioTarjeta.setOnClickListener{
+            val showradioTarjeta = TipoTarjetaFragment()
+            showradioTarjeta.show((activity as AppCompatActivity).supportFragmentManager,"Tipo de Pago")
+            showradioTarjeta.setCancelable(false)
+        }
+
+        radioCredito.setOnClickListener{
+            val showradioCredito = TipoEfectivoFragment()
+            showradioCredito.show((activity as AppCompatActivity).supportFragmentManager,"Tipo de Credito")
+            showradioCredito.setCancelable(false)
+        }
+
+    }
 
 
 }
