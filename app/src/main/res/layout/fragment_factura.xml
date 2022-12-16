@@ -721,7 +721,7 @@
         android:layout_marginEnd="20sp"
         android:background="@drawable/input_border"
         android:backgroundTint="#071C65"
-        android:columnCount="5"
+        android:columnCount="6"
         android:padding="15sp"
         android:rowCount="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -729,7 +729,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
         <TextView
-            android:layout_width="35sp"
+            android:layout_width="32sp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2sp"
             android:gravity="center"
@@ -737,9 +737,17 @@
             android:textColor="#fff"
             android:textSize="15sp"
             android:textStyle="bold" />
-
         <TextView
-            android:layout_width="60sp"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2sp"
+            android:gravity="center"
+            android:text="Op."
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2sp"
             android:gravity="center"
@@ -749,17 +757,17 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="60sp"
+            android:layout_width="62sp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2sp"
             android:gravity="center"
-            android:text="ID Cliente"
+            android:text="IDCliente"
             android:textColor="#fff"
             android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="120sp"
+            android:layout_width="100sp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2sp"
             android:gravity="center"
@@ -769,7 +777,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="50sp"
+            android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Total"
@@ -792,7 +800,7 @@
            android:layout_height="wrap_content"
            android:orientation="vertical"
            android:rowCount="2"
-           android:padding="5sp">
+           android:padding="2sp">
            <GridLayout
                android:id="@+id/btndetalles"
                android:layout_width="match_parent"
@@ -800,18 +808,18 @@
                android:background="@drawable/input_border"
                android:backgroundTint="#fff"
                android:clickable="true"
-               android:columnCount="6"
+               android:columnCount="7"
                android:elevation="3sp"
                android:layout_margin="4sp"
                android:foreground="@drawable/selectcard"
-               android:padding="15sp"
+               android:padding="10sp"
                android:rowCount="1"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="35sp"
+                   android:layout_width="32sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -819,9 +827,17 @@
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
-
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="40sp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="2sp"
+                   android:gravity="center"
+                   android:text="Boleta"
+                   android:textColor="#071C65"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:layout_width="40sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -831,7 +847,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="62sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -841,7 +857,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="120sp"
+                   android:layout_width="100sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -851,7 +867,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="50sp"
+                   android:layout_width="40sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -877,28 +893,36 @@
                android:background="@drawable/input_border"
                android:backgroundTint="#fff"
                android:clickable="true"
-               android:columnCount="6"
+               android:columnCount="7"
                android:elevation="3sp"
                android:layout_margin="4sp"
                android:foreground="@drawable/selectcard"
-               android:padding="15sp"
+               android:padding="10sp"
                android:rowCount="1"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="35sp"
+                   android:layout_width="32sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
-                   android:text="02"
+                   android:text="01"
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
-
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="40sp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="2sp"
+                   android:gravity="center"
+                   android:text="Punto"
+                   android:textColor="#071C65"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:layout_width="40sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -908,7 +932,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="62sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -918,7 +942,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="120sp"
+                   android:layout_width="100sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -928,7 +952,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="50sp"
+                   android:layout_width="40sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -936,7 +960,9 @@
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
+
                <ImageButton
+
                    android:layout_width="5sp"
                    android:layout_height="20sp"
                    android:layout_gravity="center"
@@ -952,28 +978,36 @@
                android:background="@drawable/input_border"
                android:backgroundTint="#fff"
                android:clickable="true"
-               android:columnCount="6"
+               android:columnCount="7"
                android:elevation="3sp"
                android:layout_margin="4sp"
                android:foreground="@drawable/selectcard"
-               android:padding="15sp"
+               android:padding="10sp"
                android:rowCount="1"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="35sp"
+                   android:layout_width="32sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
-                   android:text="03"
+                   android:text="01"
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
-
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="40sp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="2sp"
+                   android:gravity="center"
+                   android:text="Boleta"
+                   android:textColor="#071C65"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:layout_width="40sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -983,7 +1017,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="62sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -993,7 +1027,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="120sp"
+                   android:layout_width="100sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1003,7 +1037,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="50sp"
+                   android:layout_width="40sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1029,18 +1063,18 @@
                android:background="@drawable/input_border"
                android:backgroundTint="#fff"
                android:clickable="true"
-               android:columnCount="6"
+               android:columnCount="7"
                android:elevation="3sp"
                android:layout_margin="4sp"
                android:foreground="@drawable/selectcard"
-               android:padding="15sp"
+               android:padding="10sp"
                android:rowCount="1"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
                <TextView
-                   android:layout_width="35sp"
+                   android:layout_width="32sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1048,9 +1082,17 @@
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
-
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="40sp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="2sp"
+                   android:gravity="center"
+                   android:text="Boleta"
+                   android:textColor="#071C65"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:layout_width="40sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1060,7 +1102,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="60sp"
+                   android:layout_width="62sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1070,7 +1112,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="120sp"
+                   android:layout_width="100sp"
                    android:layout_height="wrap_content"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1080,7 +1122,7 @@
                    android:textStyle="bold" />
 
                <TextView
-                   android:layout_width="50sp"
+                   android:layout_width="40sp"
                    android:layout_height="match_parent"
                    android:layout_marginEnd="2sp"
                    android:gravity="center"
@@ -1088,7 +1130,9 @@
                    android:textColor="#071C65"
                    android:textSize="12sp"
                    android:textStyle="bold" />
+
                <ImageButton
+
                    android:layout_width="5sp"
                    android:layout_height="20sp"
                    android:layout_gravity="center"

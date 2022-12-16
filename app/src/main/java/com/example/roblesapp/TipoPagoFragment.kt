@@ -8,7 +8,10 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_factura.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.*
 
@@ -41,8 +44,13 @@ lateinit var campoP:EditText
             Toast.makeText(context,"Agregar: $ratingR",Toast.LENGTH_LONG).show()
             dismiss()
         }
+
+
         return rootView
+
+
     }
+
 
 
 }

@@ -123,7 +123,6 @@
             android:hint="Ingresar Razon Social"
             android:inputType="text"
             android:focusable="false"
-            android:backgroundTint="#DDDDDD"
             android:paddingLeft="20sp"
             android:textColor="#123456"
             android:textColorHint="#404143"
