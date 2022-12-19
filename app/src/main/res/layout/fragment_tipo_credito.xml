@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".TipoEfectivoFragment">
+    tools:context=".TipoCreditoFragment">
 
     <LinearLayout
         android:layout_width="380dp"
@@ -26,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="PAGO EN EFECTIVO"
+                android:text="PAGO EN CREDITO"
                 android:textColor="#071C65"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -43,19 +42,27 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="20sp"
-            android:layout_marginTop="15sp"
-            android:layout_marginBottom="15sp"
-            android:textAlignment="center"
-            android:backgroundTint="#41C9F3"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:background="@drawable/cardlogin"
-            android:padding="15sp"
-            android:text="Se realizara el modo de Pago en Efectivo"/>
+            android:layout_marginTop="10sp"
+            android:text="Monto Soles:"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputmontosoles"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/input_border"
+            android:drawablePadding="12sp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20sp"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +70,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btncancelartipopagoefectivo"
+                android:id="@+id/btncancelartipopagocredito"
                 android:layout_width="wrap_content"
                 android:layout_height="60sp"
                 android:layout_gravity="center"
@@ -79,7 +86,7 @@
                 app:cornerRadius="10sp" />
 
             <Button
-                android:id="@+id/btnagregartipopagoefectivo"
+                android:id="@+id/btnagregartipopagocredito"
                 android:layout_width="wrap_content"
                 android:layout_height="60sp"
                 android:layout_gravity="center"

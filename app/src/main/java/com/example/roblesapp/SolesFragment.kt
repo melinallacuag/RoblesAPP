@@ -16,7 +16,13 @@ import kotlinx.android.synthetic.main.fragment_soles.view.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.*
 import kotlinx.android.synthetic.main.fragment_tipo_pago.view.btncerrar
-
+import java.io.BufferedReader
+import java.io.Console
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.URL
+import android.util.Log
+import java.net.ConnectException
 
 class SolesFragment : DialogFragment() {
 
@@ -27,8 +33,6 @@ class SolesFragment : DialogFragment() {
         // Inflate the layout for this fragment
         var rootView: View = inflater.inflate(R.layout.fragment_soles,container,false)
 
-
-
         rootView.btncerrar.setOnClickListener{
             dismiss()
         }
@@ -36,12 +40,6 @@ class SolesFragment : DialogFragment() {
             dismiss()
         }
         rootView.btnagregarsoles.setOnClickListener{
-            val solesId = inputmotosoles.id
-            val soles = rootView.findViewById<EditText>(solesId)
-
-            var totalsoles = soles.text.toString()
-
-            Toast.makeText(context,"Monto Soles: $totalsoles", Toast.LENGTH_LONG).show()
             dismiss()
         }
         return rootView

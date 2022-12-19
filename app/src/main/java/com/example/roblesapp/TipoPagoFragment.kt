@@ -59,7 +59,7 @@ class TipoPagoFragment : DialogFragment() {
         }
 
         radioCredito.setOnClickListener{
-            val showradioCredito = TipoEfectivoFragment()
+            val showradioCredito = TipoCreditoFragment()
             showradioCredito.show((activity as AppCompatActivity).supportFragmentManager,"Tipo de Credito")
             showradioCredito.setCancelable(false)
         }
