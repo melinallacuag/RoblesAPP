@@ -18,7 +18,6 @@ object Conexion {
             cnn = DriverManager.getConnection(
                 "jdbc:jtds:sqlserver://192.168.1.230:1433;databaseName=Colegio;user=sa;password=@dm19!2017;integratedSecurity=true;"
             )
-          //  val applicationContext
           //  Toast.makeText(applicationContext,"correcto", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
           //  Log.e("error", exception.message!!)

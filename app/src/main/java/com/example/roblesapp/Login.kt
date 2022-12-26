@@ -22,6 +22,7 @@ class Login : AppCompatActivity() {
     var modificar: Button? = null
     var eliminar: Button? = null
     var limpiar: Button? = null
+    var ingresar: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +32,33 @@ class Login : AppCompatActivity() {
         modificar = findViewById<View>(R.id.btnmodificar) as Button
         eliminar = findViewById<View>(R.id.btneliminar) as Button
         limpiar = findViewById<View>(R.id.btnlimpiar) as Button
+        ingresar = findViewById<View>(R.id.btnlogin) as Button
 
+        ingresar!!.setOnClickListener{
+            try {
+                val stn = Conexion.conexionDB()?.createStatement()!!
+                val rs = stn.executeQuery(
+                    "SELECT * FROM Alumno WHERE codigo='" + nombreid!!.text.toString() + "'AND nombre='"+nombrealumno!!.text.toString()+"'"
+                )
+                if (nombreid.text.isNullOrEmpty() && nombrealumno.text.isNullOrEmpty()){
+                    Toast.makeText(this,"Los campos son requeridos",Toast.LENGTH_SHORT).show()
+
+                    if (TextUtils.isEmpty(nombreid.text)){
+                        Toast.makeText(this,"Ingresar codigo",Toast.LENGTH_SHORT).show()
+                    }
+                    if (TextUtils.isEmpty(nombrealumno.text)) {
+                        Toast.makeText(this, "Ingresar nombre", Toast.LENGTH_SHORT).show()
+                    }
+                }else if (rs.next()){
+                    startActivity(Intent(this,MainActivity::class.java))
+                }else{
+                    Toast.makeText(this,"Los datos son incorrectos",Toast.LENGTH_SHORT).show()
+                }
+
+            } catch (exception: java.lang.Exception) {
+                Log.e("error", exception.message!!)
+            }
+        }
         guardar!!.setOnClickListener{
             try {
                 val stm = Conexion.conexionDB()?.prepareStatement("INSERT INTO Alumno Values(?,?,?)")!!
@@ -107,3 +134,5 @@ class Login : AppCompatActivity() {
 
 
 }
+
+
