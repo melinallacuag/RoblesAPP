@@ -29,6 +29,8 @@ class FacturaFragment : Fragment() {
             showlibre.show((activity as AppCompatActivity).supportFragmentManager,"Soles")
             showlibre.setCancelable(false)
         }
+
+
         btnsoles.setOnClickListener{
             val showsoles = SolesFragment()
             showsoles.show((activity as AppCompatActivity).supportFragmentManager,"Soles")

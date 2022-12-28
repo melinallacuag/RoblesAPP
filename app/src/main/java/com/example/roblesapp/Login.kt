@@ -3,17 +3,13 @@ package com.example.roblesapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.StrictMode
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import com.example.myapplication.Conexion
-import com.example.roblesapp.databinding.ActivityLoginBinding
 import kotlinx.android.synthetic.main.activity_login.*
-import java.sql.*
 
 class Login : AppCompatActivity() {
 
@@ -24,6 +20,20 @@ class Login : AppCompatActivity() {
     var limpiar: Button? = null
     var ingresar: Button? = null
 
+
+fun main(){
+    val stn = Conexion.conexionDB()?.createStatement()!!
+    val resultSet = stn.executeQuery("SELECT * FROM Alumno")
+
+    val lista = mutableListOf<Alumno>()
+
+    while (resultSet.next()){
+        val codigo = resultSet.getString("codigo")
+        val nombre = resultSet.getString("nombre")
+        val apellidos = resultSet.getString("apellidos")
+        lista.add(Alumno(codigo,nombre,apellidos))
+    }
+}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
