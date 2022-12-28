@@ -20,7 +20,6 @@ object Conexion {
             )
           //  Toast.makeText(applicationContext,"correcto", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
-          //  Log.e("error", exception.message!!)
            //  Toast.makeText(this, "error", Toast.LENGTH_LONG).show();
         }
         return cnn
