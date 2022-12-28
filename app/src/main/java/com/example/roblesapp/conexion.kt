@@ -18,9 +18,7 @@ object Conexion {
             cnn = DriverManager.getConnection(
                 "jdbc:jtds:sqlserver://192.168.1.230:1433;databaseName=Colegio;user=sa;password=@dm19!2017;integratedSecurity=true;"
             )
-          //  Toast.makeText(applicationContext,"correcto", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
-           //  Toast.makeText(this, "error", Toast.LENGTH_LONG).show();
         }
         return cnn
     }
