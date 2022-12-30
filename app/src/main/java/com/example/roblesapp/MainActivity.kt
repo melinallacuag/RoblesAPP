@@ -5,12 +5,9 @@ import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.ui.*
 import com.example.roblesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
+
         val navView: NavigationView = binding.navView
         navView.itemIconTintList = null
 
@@ -35,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_menuprincipal,R.id.nav_venta,R.id.nav_cierreX,
+                R.id.mainActivity,R.id.nav_menuprincipal,R.id.nav_venta,R.id.nav_cierreX,
                 R.id.nav_cierreZ,R.id.nav_cambioturno,R.id.nav_turnodia,
                 R.id.nav_consultarcomprobante,R.id.nav_depositogrifo,
                 R.id.nav_anular,R.id.nav_configuracionlado
@@ -43,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        NavigationUI.setupWithNavController(binding.appBarMain.bottomNavigationView,navController)
 
 
     }

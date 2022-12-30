@@ -40,6 +40,7 @@ class DetalleClienteGeneradoFragment : DialogFragment() {
             dismiss()
         }
 
+
         return rootView
     }
 
